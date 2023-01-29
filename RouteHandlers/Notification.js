@@ -9,8 +9,16 @@
 const notifications = require("../Schemas/notificationSchema")
 
 const ShowNotifications = async(req,res)=>{
-        var querry =   notifications.find({}).sort('-date').limit(10)
-        querry.exec((err,docs)=>{res.json(docs)})
+    try {
+       
+        let n =  await notifications.find({})
+        
+        res.json({notfications:n})
+    } 
+    catch(err) {
+        res.status(500).send('server error')
+    }
+       
 }
 
 const addNotification = async(req,res)=>{
