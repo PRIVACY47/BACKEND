@@ -1,0 +1,27 @@
+#  GET http://localhost:3000/
+#  Content-Type: application/json
+
+#  {
+#      "_id" : "20JR1A4459",
+#      "name" : "PRIVACY",
+#      "email" :"PRIVAMAIL",
+#      "password" : "PASSWORD"
+# }
+
+
+
+# http://localhost:3000/User/SignUp
+# Content-Type: application/json
+
+# {
+#     "_id" : "20JR1A4459",
+#     "name" : "PRIVACY",
+#     "email" :"PRIVAMAIL",
+#     "password" : "PASSWORD"
+# }
+
+
+# return all notifications
+http://localhost:3000/Notifications
+Content-Type: application/json
+
