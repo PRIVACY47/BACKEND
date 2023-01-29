@@ -1,12 +1,16 @@
-const UserModel = require("../Schemas/userSchema")
-const mongoose = require('mongoose')
+// a module for user routes
 
-const SignUp = async(req,res)=>{
-    UserModel.create({
-        _id: req.body._id,
-        name : req.body.name,
-        email : req.body.email,
-        password:req.body.password})
+
+
+// const UserModel = require("../Schemas/userSchema")
+// const mongoose = require('mongoose')
+
+// const SignUp = async(req,res)=>{
+//     UserModel.create({
+//         _id: req.body._id,
+//         name : req.body.name,
+//         email : req.body.email,
+//         password:req.body.password})
 
     // const backk = await UserModel.find ({ _id: req.body._id})
     // if(backk)
@@ -22,11 +26,11 @@ const SignUp = async(req,res)=>{
     // })
     // res.json({"message":"user created"})
     // }
-}
+// }
 
 
-const SignIn = async (req,res)=>{
-    const user = mongoose.find({email:req.body.email})
+// const SignIn = async (req,res)=>{
+//     const user = mongoose.find({email:req.body.email})
 
-}
-module.exports = SignUp
+// }
+// module.exports = SignUp
